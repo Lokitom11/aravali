@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.head {
+    height: 80px;
+    background-color: rgb(230, 234, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head img {
+    width: 14em;
+    height: 4em;
+    padding: 0 2in 0 0;
+}
+
+.head ul {
+    color: rgb(29, 30, 31);
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    cursor: pointer;
+}
+
+.head ul li {
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(29, 30, 31);
+}
+
+.dropone {
+    display: none;
+}
+
+.about a:hover {
+    color: rgb(252, 4, 5);
+}
+
+.about:hover .dropone {
+
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 220px;
+    top: 0;
+    margin: 27px 22px 0 0;
+    margin-right: 5em;
+    transition: all 0.5s;
+    background-color: rgb(230, 234, 237);
+
+}
+
+.about:hover .dropone ul {
+    display: block;
+    padding: 35px 8px;
+    /* margin: 0 36px 0 0; */
+}
+
+.about:hover .dropone ul li {
+    display: flex;
+    /* color: aqua; */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.dropone ul li:hover {
+    color: rgb(245, 95, 8);
+}
+
+.droptwo {
+    display: none;
+}
+
+.course a:hover {
+    color: rgb(252, 4, 5);
+}
+
+.course:hover .droptwo {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 140px;
+    top: 0;
+    margin: 27px 22px 0 0;
+    margin-right: 5em;
+    transition: all 0.5s;
+    background-color: rgb(230, 234, 237);
+}
+
+.droptwo ul {
+    display: block;
+    padding: 35px 8px;
+
+}
+
+.droptwo ul li {
+    display: flex;
+    align-items: center;
+}
+
+.droptwo ul li:hover {
+    color: rgb(245, 95, 8);
+}
